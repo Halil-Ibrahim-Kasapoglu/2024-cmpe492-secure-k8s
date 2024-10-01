@@ -160,11 +160,11 @@ This project involves setting up an Apache web server on an Ubuntu Server runnin
 
 - VM Apache Server Load Test Results:
   - Plots: [vm/plots](vm/plots)
-  - Result Files: [vm/results](vm/results)
+  - Result Files: [vm/outputs](vm/outputs)
 - Kubernetes Apache Server Load Test Results (No HPA):
-    - Plots: [k8s-no-scale/plots](k8s-no-scale/plots)
-    - Result Files: [k8s-no-scale/results](k8s-no-scale/results)
+    - Plots: [k8s-no-scale/plots](k8s-no-scale/results/plots)
+    - Result Files: [k8s-no-scale/outputs](k8s-no-scale/results/outputs)
 - Kubernetes Apache Server Load Test Results (With HPA):
-    - Plots: [k8s-scale/plots](k8s-scale/plots)
-    - Result Files: [k8s-scale/results](k8s-scale/results)
+    - Plots: [k8s-scale/plots](k8s-scale/results/plots)
+    - Result Files: [k8s-scale/outputs](k8s-scale/results/outputs)
 
