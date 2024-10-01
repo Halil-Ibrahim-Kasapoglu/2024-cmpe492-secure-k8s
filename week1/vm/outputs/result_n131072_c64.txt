@@ -10,33 +10,27 @@ Server Hostname:        127.0.0.1
 Server Port:            8080
 
 Document Path:          /
-Document Length:        10671 bytes
+Document Length:        53 bytes
 
 Concurrency Level:      64
-Time taken for tests:   1.072 seconds
+Time taken for tests:   0.967 seconds
 Complete requests:      131072
-Failed requests:        749
-   (Connect: 0, Receive: 0, Length: 734, Exceptions: 15)
-Keep-Alive requests:    129326
-Total transferred:      1431197488 bytes
-HTML transferred:       1390836798 bytes
-Requests per second:    122296.15 [#/sec] (mean)
-Time per request:       0.523 [ms] (mean)
-Time per request:       0.008 [ms] (mean, across all concurrent requests)
-Transfer rate:          1304074.70 [Kbytes/sec] received
+Failed requests:        646
+   (Connect: 0, Receive: 0, Length: 632, Exceptions: 14)
+Keep-Alive requests:    129408
+Total transferred:      43652424 bytes
+HTML transferred:       6913320 bytes
+Requests per second:    135517.94 [#/sec] (mean)
+Time per request:       0.472 [ms] (mean)
+Time per request:       0.007 [ms] (mean, across all concurrent requests)
+Transfer rate:          44075.30 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    0   0.1      0       3
-Processing:     0    1   0.7      0      14
-Waiting:        0    1   0.7      0      13
-Total:          0    1   0.7      0      14
-WARNING: The median and mean for the processing time are not within a normal deviation
-        These results are probably not that reliable.
-WARNING: The median and mean for the waiting time are not within a normal deviation
-        These results are probably not that reliable.
-WARNING: The median and mean for the total time are not within a normal deviation
-        These results are probably not that reliable.
+Connect:        0    0   0.0      0       2
+Processing:     0    0   0.6      0      12
+Waiting:        0    0   0.6      0      12
+Total:          0    0   0.6      0      12
 
 Percentage of the requests served within a certain time (ms)
   50%      0
@@ -44,7 +38,7 @@ Percentage of the requests served within a certain time (ms)
   75%      1
   80%      1
   90%      1
-  95%      2
+  95%      1
   98%      2
   99%      3
- 100%     14 (longest request)
+ 100%     12 (longest request)

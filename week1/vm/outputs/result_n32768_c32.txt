@@ -10,25 +10,26 @@ Server Hostname:        127.0.0.1
 Server Port:            8080
 
 Document Path:          /
-Document Length:        10671 bytes
+Document Length:        53 bytes
 
 Concurrency Level:      32
-Time taken for tests:   0.342 seconds
+Time taken for tests:   0.370 seconds
 Complete requests:      32768
-Failed requests:        0
-Keep-Alive requests:    32455
-Total transferred:      359811663 bytes
-HTML transferred:       349667328 bytes
-Requests per second:    95941.07 [#/sec] (mean)
-Time per request:       0.334 [ms] (mean)
-Time per request:       0.010 [ms] (mean, across all concurrent requests)
-Transfer rate:          1028797.48 [Kbytes/sec] received
+Failed requests:        4
+   (Connect: 0, Receive: 0, Length: 4, Exceptions: 0)
+Keep-Alive requests:    32457
+Total transferred:      10962457 bytes
+HTML transferred:       1736492 bytes
+Requests per second:    88652.73 [#/sec] (mean)
+Time per request:       0.361 [ms] (mean)
+Time per request:       0.011 [ms] (mean, across all concurrent requests)
+Transfer rate:          28963.44 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    0   0.0      0       2
-Processing:     0    0   0.3      0       7
-Waiting:        0    0   0.3      0       7
+Connect:        0    0   0.1      0       3
+Processing:     0    0   0.4      0       8
+Waiting:        0    0   0.4      0       8
 Total:          0    0   0.4      0       8
 
 Percentage of the requests served within a certain time (ms)
@@ -39,5 +40,5 @@ Percentage of the requests served within a certain time (ms)
   90%      1
   95%      1
   98%      1
-  99%      1
+  99%      2
  100%      8 (longest request)
