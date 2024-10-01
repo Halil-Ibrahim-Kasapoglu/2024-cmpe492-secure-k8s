@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hpa-web-server-service
+spec:
+  type: NodePort
+  ports:
+    - port: 8061
+      targetPort: 8061
+      nodePort: 30001  
+  selector:
+    app: hpa-web-server

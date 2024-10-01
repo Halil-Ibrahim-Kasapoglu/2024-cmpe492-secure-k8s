@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hpa-web-server
+spec:
+  replicas: 1  # Start with 1 pod
+  selector:
+    matchLabels:
+      app: hpa-web-server
+  template:
+    metadata:
+      labels:
+        app: hpa-web-server
+    spec:
+      containers:
+      - name: web-server-apache
+        image: web-server-apache:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8061
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "500m"
