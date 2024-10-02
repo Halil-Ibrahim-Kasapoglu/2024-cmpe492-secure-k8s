@@ -74,19 +74,24 @@ This project involves setting up an Apache web server on an Ubuntu Server runnin
     ```
     This will allow minikube to use the docker images that are built on the local machine.
 
+    If minikube fails to find image, you can try loading image using the following command:
+    ```bash
+    minikube image load web-server-apache:latest
+    ```
+
     If you want to view the Kubernetes dashboard, you can enable it using the following command:
     ```bash
     minikube dashboard
     ```
     This will open the Kubernetes dashboard in your default browser.
 
-3. **Create Dockerfile for Apache Server**:
+4. **Create Dockerfile for Apache Server**:
     - We have created a file named `Dockerfile` with the following content. It will create an Apache server image using base image `httpd:2.4` and change the default content to our custom content. It also exposes port 8061. To be compatible with the service configuration it should remain 8061, otherwise you should also change the service configuration. Similarly, the docker image should be built with the same name as the one in the deployment configuration.Build the Docker image using the following command:
     ```bash
     docker build -t web-server-apache:latest .
     ```
 
-4. ** Deploy to Kubernetes (No HPA)**:
+5. ** Deploy to Kubernetes (No HPA)**:
     - Navigate to the directory containing the deployment and service configuration files under the `k8s-no-scale` directory
     ```bash
     cd k8s-no-scale
@@ -107,7 +112,7 @@ This project involves setting up an Apache web server on an Ubuntu Server runnin
     ```
     - You can visit the IP address in your browser to verify that the Apache server is running.
 
-5. **Set up Horizontal Pod Autoscaler (HPA)**:
+6. **Set up Horizontal Pod Autoscaler (HPA)**:
     - Navigate to the directory containing the HPA configuration file under the `k8s-scale` directory
     ```bash
     cd k8s-scale
