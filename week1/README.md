@@ -108,7 +108,7 @@ This project involves setting up an Apache web server on an Ubuntu Server runnin
     ```
     - To get the IP address of the service, you can use the following command:
     ```bash
-    minikube service apache-service --url
+    minikube service web-server-apache-service
     ```
     - You can visit the IP address in your browser to verify that the Apache server is running.
 
@@ -127,7 +127,11 @@ This project involves setting up an Apache web server on an Ubuntu Server runnin
     ```bash
     kubectl get hpa
     ```
-    - You can also check the status of the deployment and service using the commands mentioned in the previous step.
+    - You can also check the status of the deployment and service using the commands mentioned in the previous step. This time service name will be `web-server-apache-service-hpa` and command will be:
+    ```bash
+    minikube service web-server-apache-service-hpa
+    ```
+    
 
 
 ## Conducting Tests
