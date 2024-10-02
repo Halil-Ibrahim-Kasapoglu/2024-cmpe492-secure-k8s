@@ -36,7 +36,7 @@ This project involves setting up an Apache web server on an Ubuntu Server runnin
 1. **Create a VM**:
    - Use your preferred virtualization software (e.g., UTM, VirtualBox) to create a new VM. We have used UTM for this project as 
         it is available on silicon macs.
-   - Allocate sufficient resources (CPU, RAM) based on your load testing needs. We have used 4 CPUs and 4GB RAM for our VM.
+   - Allocate sufficient resources (CPU, RAM) based on your load testing needs. We have used 1 CPUs and 512MB RAM for our VM.
    - It is better to use ssh to connect to the VM as it allows you to copy and paste material via scp. We have followed the guide [here](https://arteen.linux.ucla.edu/ssh-into-utm-vm.html) to connect to the VM using ssh. It is also possible to use port forwarding to connect to the deployed web server on the VM which is what we have done in this project.
 
 2. **Install Ubuntu Server**:
