@@ -13,7 +13,6 @@ This project involves setting up an Apache web server on an Ubuntu Server runnin
   - [Kubernetes Setup](#kubernetes-setup)
 - [Conducting Tests](#conducting-tests)
 - [Results and Analysis](#results-and-analysis)
-- [Conclusion](#conclusion)
 
 ## Prerequisites
 
