@@ -9,7 +9,7 @@ spec:
     name: hpa-web-server
   minReplicas: 1
   maxReplicas: 10
-  targetCPUUtilizationPercentage: 50  # Set target average CPU utilization
+  targetCPUUtilizationPercentage: 20
 
 
 
