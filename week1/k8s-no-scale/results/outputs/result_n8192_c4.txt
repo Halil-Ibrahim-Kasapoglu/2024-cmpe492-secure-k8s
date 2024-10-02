@@ -7,35 +7,29 @@ Benchmarking 127.0.0.1 (be patient)
 
 Server Software:        Apache/2.4.62
 Server Hostname:        127.0.0.1
-Server Port:            52881
+Server Port:            60186
 
 Document Path:          /
 Document Length:        50 bytes
 
 Concurrency Level:      4
-Time taken for tests:   1.086 seconds
+Time taken for tests:   1.001 seconds
 Complete requests:      8192
 Failed requests:        0
 Keep-Alive requests:    8112
 Total transferred:      2699844 bytes
 HTML transferred:       409600 bytes
-Requests per second:    7545.02 [#/sec] (mean)
-Time per request:       0.530 [ms] (mean)
-Time per request:       0.133 [ms] (mean, across all concurrent requests)
-Transfer rate:          2428.34 [Kbytes/sec] received
+Requests per second:    8183.91 [#/sec] (mean)
+Time per request:       0.489 [ms] (mean)
+Time per request:       0.122 [ms] (mean, across all concurrent requests)
+Transfer rate:          2633.96 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    0   0.0      0       1
-Processing:     0    1   0.9      0      41
-Waiting:        0    1   0.9      0      41
-Total:          0    1   0.9      0      41
-WARNING: The median and mean for the processing time are not within a normal deviation
-        These results are probably not that reliable.
-WARNING: The median and mean for the waiting time are not within a normal deviation
-        These results are probably not that reliable.
-WARNING: The median and mean for the total time are not within a normal deviation
-        These results are probably not that reliable.
+Connect:        0    0   0.0      0       0
+Processing:     0    0   0.3      0       4
+Waiting:        0    0   0.3      0       4
+Total:          0    0   0.3      0       5
 
 Percentage of the requests served within a certain time (ms)
   50%      0
@@ -46,4 +40,4 @@ Percentage of the requests served within a certain time (ms)
   95%      1
   98%      1
   99%      2
- 100%     41 (longest request)
+ 100%      5 (longest request)

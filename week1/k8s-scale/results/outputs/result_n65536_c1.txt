@@ -7,28 +7,28 @@ Benchmarking 127.0.0.1 (be patient)
 
 Server Software:        Apache/2.4.62
 Server Hostname:        127.0.0.1
-Server Port:            60199
+Server Port:            51739
 
 Document Path:          /
 Document Length:        50 bytes
 
 Concurrency Level:      1
-Time taken for tests:   51.585 seconds
+Time taken for tests:   51.480 seconds
 Complete requests:      65536
 Failed requests:        0
 Keep-Alive requests:    64888
 Total transferred:      21598369 bytes
 HTML transferred:       3276800 bytes
-Requests per second:    1270.44 [#/sec] (mean)
-Time per request:       0.787 [ms] (mean)
-Time per request:       0.787 [ms] (mean, across all concurrent requests)
-Transfer rate:          408.88 [Kbytes/sec] received
+Requests per second:    1273.03 [#/sec] (mean)
+Time per request:       0.786 [ms] (mean)
+Time per request:       0.786 [ms] (mean, across all concurrent requests)
+Transfer rate:          409.71 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
 Connect:        0    0   0.0      0       1
 Processing:     0    1   4.1      0      46
-Waiting:        0    0   0.4      0      44
+Waiting:        0    0   0.4      0      45
 Total:          0    1   4.1      0      46
 
 Percentage of the requests served within a certain time (ms)

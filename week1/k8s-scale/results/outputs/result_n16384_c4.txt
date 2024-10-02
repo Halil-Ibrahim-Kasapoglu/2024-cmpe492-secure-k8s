@@ -7,35 +7,29 @@ Benchmarking 127.0.0.1 (be patient)
 
 Server Software:        Apache/2.4.62
 Server Hostname:        127.0.0.1
-Server Port:            60199
+Server Port:            51739
 
 Document Path:          /
 Document Length:        50 bytes
 
 Concurrency Level:      4
-Time taken for tests:   2.152 seconds
+Time taken for tests:   2.279 seconds
 Complete requests:      16384
 Failed requests:        0
 Keep-Alive requests:    16224
 Total transferred:      5399684 bytes
 HTML transferred:       819200 bytes
-Requests per second:    7615.09 [#/sec] (mean)
-Time per request:       0.525 [ms] (mean)
-Time per request:       0.131 [ms] (mean, across all concurrent requests)
-Transfer rate:          2450.89 [Kbytes/sec] received
+Requests per second:    7189.97 [#/sec] (mean)
+Time per request:       0.556 [ms] (mean)
+Time per request:       0.139 [ms] (mean, across all concurrent requests)
+Transfer rate:          2314.06 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    0   0.0      0       2
-Processing:     0    1   1.0      0      42
-Waiting:        0    1   0.9      0      42
-Total:          0    1   1.0      0      42
-WARNING: The median and mean for the processing time are not within a normal deviation
-        These results are probably not that reliable.
-WARNING: The median and mean for the waiting time are not within a normal deviation
-        These results are probably not that reliable.
-WARNING: The median and mean for the total time are not within a normal deviation
-        These results are probably not that reliable.
+Connect:        0    0   0.0      0       0
+Processing:     0    1   1.2      0      44
+Waiting:        0    1   1.1      0      44
+Total:          0    1   1.2      0      44
 
 Percentage of the requests served within a certain time (ms)
   50%      0
@@ -46,4 +40,4 @@ Percentage of the requests served within a certain time (ms)
   95%      1
   98%      1
   99%      2
- 100%     42 (longest request)
+ 100%     44 (longest request)

@@ -13,38 +13,32 @@ Document Path:          /
 Document Length:        53 bytes
 
 Concurrency Level:      64
-Time taken for tests:   0.560 seconds
+Time taken for tests:   1.162 seconds
 Complete requests:      65536
-Failed requests:        1018
-   (Connect: 0, Receive: 0, Length: 997, Exceptions: 21)
-Keep-Alive requests:    64087
-Total transferred:      21601617 bytes
-HTML transferred:       3420567 bytes
-Requests per second:    117100.92 [#/sec] (mean)
-Time per request:       0.547 [ms] (mean)
-Time per request:       0.009 [ms] (mean, across all concurrent requests)
-Transfer rate:          37693.52 [Kbytes/sec] received
+Failed requests:        36
+   (Connect: 0, Receive: 0, Length: 36, Exceptions: 0)
+Keep-Alive requests:    64896
+Total transferred:      21915990 bytes
+HTML transferred:       3471500 bytes
+Requests per second:    56386.02 [#/sec] (mean)
+Time per request:       1.135 [ms] (mean)
+Time per request:       0.018 [ms] (mean, across all concurrent requests)
+Transfer rate:          18414.19 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    0   0.1      0       2
-Processing:     0    1   0.7      0      12
-Waiting:        0    1   0.7      0      12
-Total:          0    1   0.7      0      12
-WARNING: The median and mean for the processing time are not within a normal deviation
-        These results are probably not that reliable.
-WARNING: The median and mean for the waiting time are not within a normal deviation
-        These results are probably not that reliable.
-WARNING: The median and mean for the total time are not within a normal deviation
-        These results are probably not that reliable.
+Connect:        0    0   0.1      0       3
+Processing:     0    1   1.8      0      33
+Waiting:        0    1   1.8      0      33
+Total:          0    1   1.8      0      36
 
 Percentage of the requests served within a certain time (ms)
   50%      0
-  66%      0
-  75%      1
-  80%      1
-  90%      1
-  95%      2
-  98%      3
-  99%      3
- 100%     12 (longest request)
+  66%      1
+  75%      2
+  80%      2
+  90%      4
+  95%      5
+  98%      6
+  99%      7
+ 100%     36 (longest request)

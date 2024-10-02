@@ -13,32 +13,37 @@ Document Path:          /
 Document Length:        53 bytes
 
 Concurrency Level:      32
-Time taken for tests:   0.632 seconds
+Time taken for tests:   1.109 seconds
 Complete requests:      65536
-Failed requests:        52
-   (Connect: 0, Receive: 0, Length: 52, Exceptions: 0)
-Keep-Alive requests:    64872
-Total transferred:      21910261 bytes
-HTML transferred:       3470652 bytes
-Requests per second:    103764.67 [#/sec] (mean)
-Time per request:       0.308 [ms] (mean)
-Time per request:       0.010 [ms] (mean, across all concurrent requests)
-Transfer rate:          33877.95 [Kbytes/sec] received
+Failed requests:        0
+Keep-Alive requests:    64902
+Total transferred:      21926680 bytes
+HTML transferred:       3473408 bytes
+Requests per second:    59096.12 [#/sec] (mean)
+Time per request:       0.541 [ms] (mean)
+Time per request:       0.017 [ms] (mean, across all concurrent requests)
+Transfer rate:          19308.65 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
 Connect:        0    0   0.0      0       1
-Processing:     0    0   0.4      0       9
-Waiting:        0    0   0.4      0       9
-Total:          0    0   0.4      0       9
+Processing:     0    1   0.9      0      16
+Waiting:        0    1   0.9      0      16
+Total:          0    1   0.9      0      17
+WARNING: The median and mean for the processing time are not within a normal deviation
+        These results are probably not that reliable.
+WARNING: The median and mean for the waiting time are not within a normal deviation
+        These results are probably not that reliable.
+WARNING: The median and mean for the total time are not within a normal deviation
+        These results are probably not that reliable.
 
 Percentage of the requests served within a certain time (ms)
   50%      0
   66%      0
-  75%      0
-  80%      0
-  90%      1
-  95%      1
-  98%      1
-  99%      2
- 100%      9 (longest request)
+  75%      1
+  80%      1
+  90%      2
+  95%      2
+  98%      3
+  99%      4
+ 100%     17 (longest request)
