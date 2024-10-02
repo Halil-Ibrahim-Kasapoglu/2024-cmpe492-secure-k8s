@@ -4,6 +4,6 @@
 ## Weekly Progress
 
 | Week | Description | Link | Presentation |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | 1 | Apache Load Testing with Kubernetes and VM | [README.md](week1/README.md) | [Presentation](week1/presentation.pdf) |
 
