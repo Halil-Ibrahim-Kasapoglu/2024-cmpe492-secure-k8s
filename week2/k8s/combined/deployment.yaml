@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: combined-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: combined
+  template:
+    metadata:
+      labels:
+        app: combined
+    spec:
+      containers:
+      - name: frontend
+        imagePullPolicy: IfNotPresent
+        image: frontend:latest
+        ports:
+        - containerPort: 5001
+        env:
+        - name: BACKEND_URL
+          value: "http://localhost:5000"
+      - name: backend
+        imagePullPolicy: IfNotPresent
+        image: backend:latest
+        ports:
+        - containerPort: 5000
