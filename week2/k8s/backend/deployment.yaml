@@ -15,6 +15,6 @@ spec:
       containers:
       - name: backend
         imagePullPolicy: IfNotPresent
-        image: registry.digitalocean.com/cmpe492/backend:latest
+        image: 2024cmpe492/backend:latest
         ports:
         - containerPort: 5000
