@@ -7,6 +7,6 @@ spec:
     app: frontend
   ports:
     - protocol: TCP
-      port: 5001
+      port: 80
       targetPort: 5001
-  type: NodePort
+  type: ClusterIP

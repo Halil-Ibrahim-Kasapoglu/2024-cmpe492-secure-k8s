@@ -20,7 +20,7 @@ spec:
         - containerPort: 5001
         env:
         - name: BACKEND_URL
-          value: "http://backend-service:5000"
+          value: "http://backend-service"
         resources:
           requests:
             cpu: "100m"       
