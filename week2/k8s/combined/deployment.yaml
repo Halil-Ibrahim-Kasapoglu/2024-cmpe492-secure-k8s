@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         image: 2024cmpe492/frontend:latest
         ports:
         - containerPort: 5001
@@ -22,7 +22,7 @@ spec:
         - name: BACKEND_URL
           value: "http://localhost:5000"
       - name: backend
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         image: 2024cmpe492/backend:latest
         ports:
         - containerPort: 5000
