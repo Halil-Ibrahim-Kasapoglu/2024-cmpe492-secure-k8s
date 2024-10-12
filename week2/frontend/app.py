@@ -13,6 +13,7 @@ def index():
 @app.route('/get-random', methods=['GET'])
 def get_random():
     response = requests.get(f"{BACKEND_URL}/random")
+    print(f"Response from backend: {response.status_code}, {response.text}")
     if response.status_code != 200:
         return 'Error: {}'.format(response.text)
     return response.json()
