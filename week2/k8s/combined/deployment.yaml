@@ -15,7 +15,7 @@ spec:
       containers:
       - name: frontend
         imagePullPolicy: IfNotPresent
-        image: https://registry.digitalocean.com/cmpe492/frontend:latest
+        image: registry.digitalocean.com/cmpe492/frontend:latest
         ports:
         - containerPort: 5001
         env:
@@ -23,6 +23,6 @@ spec:
           value: "http://localhost:5000"
       - name: backend
         imagePullPolicy: IfNotPresent
-        image: https://registry.digitalocean.com/cmpe492/backend:latest
+        image: registry.digitalocean.com/cmpe492/backend:latest
         ports:
         - containerPort: 5000
