@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-BACKEND_URL = os.getenv('BACKEND_URL', 'http://backend-service:5000')
+BACKEND_URL = os.getenv('BACKEND_URL', 'http://127.0.0.1:5000')
 
 @app.route('/')
 def index():
