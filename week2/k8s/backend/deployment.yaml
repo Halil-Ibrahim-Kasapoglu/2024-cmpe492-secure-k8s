@@ -18,10 +18,10 @@ spec:
         image: 2024cmpe492/backend:latest
         ports:
         - containerPort: 5000
-      resources:
-        requests:
-          cpu: "100m"       
-          memory: "256Mi"   
-        limits:
-          cpu: "200m"       
-          memory: "512Mi"   
+        resources:
+          requests:
+            cpu: "100m"       
+            memory: "256Mi"   
+          limits:
+            cpu: "200m"       
+            memory: "512Mi"   
