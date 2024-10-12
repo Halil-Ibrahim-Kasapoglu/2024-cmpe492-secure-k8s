@@ -15,7 +15,7 @@ spec:
       containers:
       - name: frontend
         imagePullPolicy: IfNotPresent
-        image: registry.digitalocean.com/cmpe492/frontend:latest
+        image: 2024cmpe492/frontend:latest
         ports:
         - containerPort: 5001
         env:
