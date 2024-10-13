@@ -1,5 +1,0 @@
-Method,Name,Error,Occurrences
-GET,//random,"ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x....>, 'Connection to api.cmpe492.com timed out. (connect timeout=3600)')",102512
-GET,//random,HTTPError('504 Server Error: Gateway Time-out for url: //random'),454
-GET,//random,"ConnectionResetError(54, 'Connection reset by peer')",34
-GET,//random,HTTPError('502 Server Error: Bad Gateway for url: //random'),150
