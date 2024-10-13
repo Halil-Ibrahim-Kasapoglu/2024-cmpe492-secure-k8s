@@ -1,0 +1,5 @@
+Method,Name,Error,Occurrences
+GET,//random,HTTPError('504 Server Error: Gateway Time-out for url: //random'),242
+GET,//random,"ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x....>, 'Connection to api.cmpe492.com timed out. (connect timeout=None)')",125180
+GET,//random,"ConnectionResetError(54, 'Connection reset by peer')",68
+GET,//random,HTTPError('502 Server Error: Bad Gateway for url: //random'),126
