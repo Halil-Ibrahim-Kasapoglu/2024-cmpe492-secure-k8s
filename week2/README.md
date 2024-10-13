@@ -160,7 +160,7 @@ docker tag my-image:latest <your-docker-hub-username>/my-image:latest
 docker push <your-docker-hub-username>/my-image:latest
 ```
 
-Alternatively, you can use the pre built images available at Docker Hub. Our docker images are available at [Docker Hub](https://hub.docker.com/repository/docker/2024cmpe492). We have listed our backend and frontend images on Docker Hub. You can pull these images from Docker Hub and deploy them on your Kubernetes cluster.
+Alternatively, you can use the pre built images available at Docker Hub. Our docker images are available at [Docker Hub](https://hub.docker.com/search?q=2024cmpe492). We have listed our backend and frontend images on Docker Hub. You can pull these images from Docker Hub and deploy them on your Kubernetes cluster.
 
 
 ### Ingress and Networking
