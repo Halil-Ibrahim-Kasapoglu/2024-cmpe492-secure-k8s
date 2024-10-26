@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-app
+  namespace: week3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        imagePullPolicy: Always
+        image: 2024cmpe492/week3_backend:latest
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:
+            cpu: "100m"       
+            memory: "256Mi"   
+          limits:
+            cpu: "200m"       
+            memory: "512Mi"
+        volumeMounts:
+        - mountPath: /data
+          name: backend-storage
+      volumes:
+      - name: backend-storage
+        persistentVolumeClaim:
+          claimName: backend-app-pvc

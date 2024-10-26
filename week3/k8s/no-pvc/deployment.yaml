@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-app-no-pvc
+  namespace: week3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend-no-pvc
+  template:
+    metadata:
+      labels:
+        app: backend-no-pvc
+    spec:
+      containers:
+      - name: backend-no-pvc
+        imagePullPolicy: Always
+        image: 2024cmpe492/week3_backend:latest
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:
+            cpu: "100m"       
+            memory: "256Mi"   
+          limits:
+            cpu: "200m"       
+            memory: "512Mi"
