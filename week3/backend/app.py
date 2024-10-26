@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 
-OUTPUT_DIR = 'output'
+OUTPUT_DIR = '/data'
 FILE = 'data.txt'
 
 def write_to_file(data):
