@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: frontend-no-nw-policy
+  namespace: default
+  labels:
+    app: frontend-no-nw-policy
+spec:
+  containers:
+  - name: frontend-no-nw-policy
+    image: nginx
+
