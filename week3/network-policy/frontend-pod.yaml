@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: frontend
+  namespace: network-security-lab
+  labels:
+    app: frontend
+spec:
+  containers:
+  - name: frontend
+    image: nginx
+
