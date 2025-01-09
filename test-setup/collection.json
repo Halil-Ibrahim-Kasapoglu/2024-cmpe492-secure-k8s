@@ -1,0 +1,152 @@
+{
+    "info": {
+      "name": "Customer, Catalog, and Order APIs",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Customer",
+        "item": [
+          {
+            "name": "Add Customer",
+            "request": {
+              "method": "POST",
+              "header": [
+                {"key": "Content-Type", "value": "application/x-www-form-urlencoded"}
+              ],
+              "body": {
+                "mode": "urlencoded",
+                "urlencoded": [
+                  {"key": "name", "value": "Name"},
+                  {"key": "firstname", "value": "Firstname"},
+                  {"key": "email", "value": "email"},
+                  {"key": "street", "value": "street"},
+                  {"key": "city", "value": "city"}
+                ]
+              },
+              "url": "{{baseUrl}}/customer/form.html"
+            }
+          },
+          {
+            "name": "List Customers",
+            "request": {
+              "method": "GET",
+              "url": "{{baseUrl}}/customer/list.html"
+            }
+          },
+          {
+            "name": "Delete Customer",
+            "request": {
+              "method": "DELETE",
+              "url": "{{baseUrl}}/customer/3.html"
+            }
+          },
+          {
+            "name": "Update Customer",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {"key": "Content-Type", "value": "application/x-www-form-urlencoded"}
+              ],
+              "body": {
+                "mode": "urlencoded",
+                "urlencoded": [
+                  {"key": "name", "value": "Name"},
+                  {"key": "firstname", "value": "Firstname"},
+                  {"key": "email", "value": "email"},
+                  {"key": "street", "value": "street"},
+                  {"key": "city", "value": "city"}
+                ]
+              },
+              "url": "{{baseUrl}}/customer/3.html"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Catalog",
+        "item": [
+          {
+            "name": "List Catalog",
+            "request": {
+              "method": "GET",
+              "url": "{{baseUrl}}/catalog/list.html"
+            }
+          },
+          {
+            "name": "Add Product",
+            "request": {
+              "method": "POST",
+              "header": [
+                {"key": "Content-Type", "value": "application/x-www-form-urlencoded"}
+              ],
+              "body": {
+                "mode": "urlencoded",
+                "urlencoded": [
+                  {"key": "name", "value": "name"},
+                  {"key": "price", "value": "0.0"}
+                ]
+              },
+              "url": "{{baseUrl}}/catalog/form.html"
+            }
+          },
+          {
+            "name": "Search Product",
+            "request": {
+              "method": "GET",
+              "url": {
+                "raw": "{{baseUrl}}/catalog/searchByName.html?query=a&submit=",
+                "host": ["{{baseUrl}}"],
+                "path": ["catalog", "searchByName.html"],
+                "query": [
+                  {"key": "query", "value": "a"},
+                  {"key": "submit", "value": ""}
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Order",
+        "item": [
+          {
+            "name": "Add Order",
+            "request": {
+              "method": "POST",
+              "header": [
+                {"key": "Content-Type", "value": "application/x-www-form-urlencoded"}
+              ],
+              "body": {
+                "mode": "urlencoded",
+                "urlencoded": [
+                  {"key": "customerId", "value": "2"},
+                  {"key": "orderLine[0].count", "value": "10"},
+                  {"key": "orderLine[0].itemId", "value": "2"},
+                  {"key": "orderLine[1].count", "value": "20"},
+                  {"key": "orderLine[1].itemId", "value": "3"},
+                  {"key": "orderLine[2].count", "value": "30"},
+                  {"key": "orderLine[2].itemId", "value": "6"}
+                ]
+              },
+              "url": "{{baseUrl}}/order/"
+            }
+          },
+          {
+            "name": "List Orders",
+            "request": {
+              "method": "GET",
+              "url": "{{baseUrl}}/order/"
+            }
+          }
+        ]
+      }
+    ],
+    "variable": [
+      {
+        "key": "baseUrl",
+        "value": "http://host:port"
+      }
+    ]
+  }
+  
