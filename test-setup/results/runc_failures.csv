@@ -1,0 +1,3 @@
+Method,Name,Error,Occurrences
+POST,//customer/form.html,RemoteDisconnected('Remote end closed connection without response'),2
+GET,//catalog/list.html,RemoteDisconnected('Remote end closed connection without response'),1

@@ -69,9 +69,9 @@ class OrderTasks(TaskSet):
 
 class MicroserviceUser(HttpUser):
     tasks = {
-        CustomerTasks: 3,  # Weight for Customer tasks
-        CatalogTasks: 3,   # Weight for Catalog tasks
-        OrderTasks: 2    # Weight for Order tasks
+        CustomerTasks: 3,
+        CatalogTasks: 3,
+        OrderTasks: 2
     }
     wait_time = between(1, 3)
 

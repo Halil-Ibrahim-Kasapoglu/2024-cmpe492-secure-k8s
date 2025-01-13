@@ -1,0 +1,6 @@
+Method,Name,Error,Occurrences
+PUT,//customer/3.html,RemoteDisconnected('Remote end closed connection without response'),1
+GET,//order/,HTTPError('500 Server Error:  for url: //order/'),8
+POST,//order/,HTTPError('500 Server Error:  for url: //order/'),1
+POST,//catalog/form.html,RemoteDisconnected('Remote end closed connection without response'),1
+GET,//customer/list.html,RemoteDisconnected('Remote end closed connection without response'),3
