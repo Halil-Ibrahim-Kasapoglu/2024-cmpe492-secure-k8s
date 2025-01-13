@@ -1,3 +1,4 @@
+![postervis](https://github.com/user-attachments/assets/5f442a08-bd80-4ae9-805f-99f7bd9a84a0)
 ## Overview
 
 Containerized environments are the backbone of modern cloud-native applications. However, traditional container runtimes like ‘runc‘ prioritize performance over security, leaving room for improvement in isolation and resilience against exploits. This project investigates and benchmarks alternative secure runtimes: ‘runsc‘ (gVisor) and ‘Kata Containers‘, against the widely used ‘runc‘ in a Kubernetes setting.
