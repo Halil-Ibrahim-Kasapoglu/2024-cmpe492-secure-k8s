@@ -1,0 +1,223 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: apache
+  name: apache
+  namespace: gvisor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: apache
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: apache
+    spec:
+      runtimeClassName: gvisor
+      containers:
+      - image: docker.io/ewolff/microservice-kubernetes-demo-apache:latest
+        name: apache
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "64Mi"
+          limits:
+            cpu: "300m"
+            memory: "1024Mi"
+status: {}
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: catalog
+  name: catalog
+  namespace: gvisor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: catalog
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: catalog
+    spec:
+      runtimeClassName: gvisor
+      containers:
+      - image: docker.io/ewolff/microservice-kubernetes-demo-catalog:latest
+        name: catalog
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "256Mi"
+          limits:
+            cpu: "1200m"
+            memory: "2048Mi"
+status: {}
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: customer
+  name: customer
+  namespace: gvisor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: customer
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: customer
+    spec:
+      runtimeClassName: gvisor
+      containers:
+      - image: docker.io/2024cmpe492/microservice-kubernetes-demo-customer:latest
+        name: customer
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "256Mi"
+          limits:
+            cpu: "1200m"
+            memory: "2048Mi"
+status: {}
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: order
+  name: order
+  namespace: gvisor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: order
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: order
+    spec:
+      runtimeClassName: gvisor
+      containers:
+      - image: docker.io/ewolff/microservice-kubernetes-demo-order:latest
+        name: order
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "256Mi"
+          limits:
+            cpu: "1200m"
+            memory: "2048Mi"
+status: {}
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: apache
+  name: apache
+  namespace: gvisor
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: apache
+  type: NodePort
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: catalog
+  name: catalog
+  namespace: gvisor
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    run: catalog
+  type: NodePort
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: customer
+  name: customer
+  namespace: gvisor
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    run: customer
+  type: NodePort
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: order
+  name: order
+  namespace: gvisor
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    run: order
+  type: NodePort
+
+

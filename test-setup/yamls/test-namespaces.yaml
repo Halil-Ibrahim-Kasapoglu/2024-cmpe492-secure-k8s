@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: runc
+  labels:
+    container-runtime: runc
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: gvisor
+  labels:
+    container-runtime: gvisor
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kata
+  labels:
+    container-runtime: kata
+
